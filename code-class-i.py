@@ -31,6 +31,19 @@ def ejercicio_3():
 
 
 
+def ejercicio_4_de_pruebaGIT():
+    cantidad_capitulos_leidos = int(input('¿Cuántos capítulos leyó hoy? '))
+    finaliza_lectura_libro = input('¿Terminaste de leer libro? ')
+    total_capitulos_del_libro, total_de_dias = 0, 1
+    while finaliza_lectura_libro != 'S' and finaliza_lectura_libro != 's':
+        total_de_dias += 1
+        total_capitulos_del_libro += cantidad_capitulos_leidos
+        cantidad_capitulos_leidos = int(input('¿Cuántos capítulos leyó hoy? '))
+        finaliza_lectura_libro = input('¿Terminaste de leer libro? ')
+    total_capitulos_del_libro += cantidad_capitulos_leidos
+    print(f'¡Felicidades! Usted leyó un libro de {str(total_capitulos_del_libro)} capítulos, en {total_de_dias} días. Super rápido')
+          
+
 
 
 

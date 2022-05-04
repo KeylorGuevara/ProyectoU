@@ -43,6 +43,16 @@ def es_primo(num):
     print("Es primo")
     return True
 
+def es_primo_ejercicio_git(num):
+    for n in range(2, num):#incluye el 2 no incluye el num
+        if num % n == 0:
+            print("No es primo. Pues", n, "es divisor")
+            return False
+    print("Es primo")
+    return True
+
+
+
 
 
 # if main
